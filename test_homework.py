@@ -15,6 +15,7 @@ def test_greeting():
 
     output = f"Привет, {name}! Тебе {str(age)} лет."
     # Проверяем результат
+
     assert output == "Привет, Анна! Тебе 25 лет."
 
 
@@ -73,6 +74,7 @@ def test_unique_elements():
     """
     l = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10, 10]
     # TODO удалите повторяющиеся элементы
+
     l = list(set(l))
     assert isinstance(l, list)
     assert len(l) == 10
